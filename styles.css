@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./assets/fonts/UbuntuSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./assets/fonts/UbuntuSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 700;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url('./assets/biblio.webp');
+  background-size: cover;
+  background-repeat: no-repeat;       
+  background-position: center center; 
+  background-attachment: fixed;
+  color: var(--light); 
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --blue: #0f6cbf;
+    --indigo: #6610f2;
+    --purple: #613d7c;
+    --pink: #e83e8c;
+    --red: #ca3120;
+    --orange: #f0ad4e;
+    --yellow: #ff7518;
+    --green: #357a32;
+    --teal: #20c997;
+    --cyan: #008196;
+    --white: #fff;
+    --gray: #6a737b;
+    --gray-dark: #343a40;
+    --primary: #171E4A;
+    --secondary: #6B5CFF;
+    --success: #357a32;
+    --info: #008196;
+    --warning: #f0ad4e;
+    --danger: #ca3120;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+.header-spa {
+    color: var(--light);
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-wrap: nowrap;
+    background-color: var(--primary);
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: solid 0.5px var(--light);
+}
+
+
+img {
+    width: 100px;
+    margin: 0 0 0 2rem;
+}
+
+.navBar{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.navUl {
+    display: flex;
+    gap: 1rem;
+}
+
+.navUl li {
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+span {
+    font-weight: bold;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--gray-dark);
+    gap: 1rem;
+    padding: 0 2.5rem;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item {
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.footer-item1 p {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.footer-container h2 {
+    font-size: 2rem;
+    color: var(--secondary);
+    margin: 0 0 1rem 0; 
+}

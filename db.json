@@ -1,0 +1,22 @@
+{
+    "digitalBooks": [
+        {
+             "id": "1",
+            "name": "name",
+            "author": "author",
+            "genre": "genre",
+            "year": "year"
+        }
+    ],
+
+
+    "phisicalBook": [
+        {
+            "id": "id",
+            "name": "name",
+            "author": "author",
+            "genre": "genre",
+            "year": "year"
+        }
+    ]
+}
