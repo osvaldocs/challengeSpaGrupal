@@ -61,6 +61,7 @@ a {
     --danger: #ca3120;
     --light: #f8f9fa;
     --dark: #343a40;
+    --foooter: #2D2D2D;
 }
 
 .header-spa {
@@ -73,6 +74,7 @@ a {
     flex-wrap: nowrap;
     background-color: var(--primary);
     width: 100%;
+    height: 60px;
     align-items: center;
     gap: 1rem;
     border-bottom: solid 0.5px var(--light);
@@ -87,20 +89,31 @@ img {
 .navBar{
     display: flex;
     width: 80%;
+    height: 100%;
     justify-content: space-between;
+    align-items: center;
     gap: 2rem;
-    padding: 1.5rem 0 1.5rem 0;
+    
 }
 
-.navUl {
+.enlacesNav {
     display: flex;
-    gap: 1rem;
+    height: 100%;
+    align-items: center;
 }
 
-.navUl li {
+.enlacesNav a {
+    display: flex;
+    height: 100%;
+    align-items: center;
     list-style: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
+    padding: 0 1rem;
+}
+
+.enlacesNav a:hover {
+  background-color: var(--secondary);
 }
 
 span {
@@ -114,18 +127,40 @@ span {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--gray-dark);
+    background-color: var(--foooter);
     gap: 1rem;
     padding: 0 2.5rem;
 }
 
-.form-contacto {
-    display: flex;
-    flex-direction: column;
+.form-riwi {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  border-radius: 4px;
 }
+
+.submit-button {
+  background-color: var(--primary);
+  color: white;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  background-color: var(--secondary);
+}
+
 
 .footer-item {
     padding: 2rem 1rem 2rem 1rem;
+}
+
+.footer-item iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  margin: 0.5rem 0; 
+  border-radius: 8px;
+  
 }
 
 .footer-item1 p {
@@ -134,8 +169,42 @@ span {
     font-weight: 400;
 }
 
+.footer-item1 img {
+  width: 12rem;
+  height: auto;
+  padding: 1rem 0;
+}
+
 .footer-container h2 {
     font-size: 2rem;
     color: var(--secondary);
     margin: 0 0 1rem 0; 
+}
+
+.fa-brands {
+  font-size: 3.5rem;
+  margin-right: 1rem;
+  transition: transform 0.3s;
+  
+}
+.div-redes {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-brands:hover {
+  transform: scale(1.2);
+  color: var(--orange);
+}
+
+.fa-square-facebook {
+  color: #3598DC;
+}
+
+.fa-square-instagram {
+  color: #f131b8;
+}
+
+.fa-linkedin {
+color: #0A66C2;
 }

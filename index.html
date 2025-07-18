@@ -16,17 +16,17 @@
     <header class="header-spa">
 			<img src="./assets/LogoRiwi1.png" alt="logoRiwi">
 			<h1>Biblioteca Riwi</h1>
-        <nav class="navBar"> 
-          <ul class="navUl">
-            <li>Inicio</li>
-            <li>Cómo funciona</li>
-            <li>Contacto</li>
-            <li><a href="#">Catálogo</a></li>
-          </ul>
-          <ul class="navUl">
-            <li>Iniciar Sesion</li>
-            <li>Registrarse</li>
-          </ul>  
+        <nav class="navBar">
+          <div class="enlacesNav">
+            <a href="#">Inicio</a>
+            <a href="#">Cómo funciona</a>
+            <a href="#">Contacto</a>
+            <a href="#">Catálogo</a>
+          </div> 
+          <div class="enlacesNav">
+            <a href="#">Iniciar Sesion</a>
+            <a href="#">Registrarse</a>
+          </div>  
         </nav>
     </header>
 
@@ -41,34 +41,37 @@
         </p>
       </div>
       <div class="footer-item">
-        <h2>Dónde estamos</h2>
+        <h2>¿Dónde estamos?</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.335730179667!2d-75.5882455174933!3d6.219383077701457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429e1dab04e05%3A0x5a77c25c8a5faf3a!2sDe%20Moda%20Outlet!5e0!3m2!1ses-419!2sco!4v1752799824423!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p>Cl. 16 #55-129, Guayabal, Medellín CC. De Moda Outlet, piso 3</p>
       </div>
       <div class="footer-item">
         <h2>Contacto</h2>
-        <form class="form-contacto">
+        <form class="form-riwi">
           <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" placeholder="Osvaldo Riwi" required>
           <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" placeholder="osvaldoR@gmail.com" required>
           <label for="mensaje">Mensaje</label>
-          <textarea name="mensaje" id="mensaje"  required></textarea>
-          <button type="submit">Enviar</button>
+          <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje"  required></textarea>
+          <button class="submit-button" type="submit">Enviar</button>
         </form>
         <p>Teléfono : +57 3017325327</p>
         <p>Correo electrónico : info@riwi.io</p>
       </div>
-      <div class="footer-item">
-        <h2>Redes sociales</h2>
-        <a href="https://www.facebook.com/profile.php?id=100092420949391&locale=es_LA" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-square-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/riwi.io/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-square-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/riwi-io/mycompany/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
+        <div class="footer-item footer-item4">
+          <h2>Redes sociales</h2>
+        <div class="div-redes">
+          <a href="https://www.facebook.com/profile.php?id=100092420949391&locale=es_LA" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/riwi.io/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/riwi-io/mycompany/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
       </div>
     </footer>
 

@@ -18,5 +18,15 @@
             "genre": "genre",
             "year": "year"
         }
+    ],
+
+    "users" : [
+        {
+            "id": "1",
+            "name": "Osvaldo Riwi",
+            "email": "osvaldoR@gmail.com",
+            "password": "admin1234",
+            "role": "admin"
+        }
     ]
 }
