@@ -1,6 +1,9 @@
-import {get, post, update, deletes} from './javascript/services';
-import { routes, navigate } from './javascript/routes';
-import { setupLogin } from './javascript/loginLogout';
+import { navigate } from './javascript/routes';
+import { logoutUser } from './javascript/loginLogout';
+
+window.addEventListener("load", () => {
+  navigate(window.location.pathname);
+});
 
 document.body.addEventListener("click", (e) => {  
   if (e.target.matches("[data-link]")) {
@@ -9,7 +12,7 @@ document.body.addEventListener("click", (e) => {
   }
 });
 
-
-window.addEventListener("load", () => {
-  navigate(window.location.pathname);
+document.addEventListener("click", (e) => {
+  if (e.target.matches("#logout-btn")) logoutUser();
 });
+

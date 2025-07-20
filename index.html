@@ -15,17 +15,17 @@
   <body>
       <header class="header-spa">
         <img src="./assets/LogoRiwi1.png" alt="logoRiwi">
-        <h1>Biblioteca Riwi</h1>
+        <h2>Biblioteca Riwi</h2>
           <nav class="navBar">
             <div class="enlacesNav">
-              <a href="#">Inicio</a>
+              <a href="/" data-link>Inicio</a>
               <a href="#">Cómo funciona</a>
-              <a href="#">Contacto</a>
+              <a href="#contacto">Contacto</a>
               <a href="/catalogo" data-link>Catálogo</a>
             </div> 
-            <div class="enlacesNav">
+            <div class="enlacesNav" id="userViews">
               <a href="/login" data-link>Iniciar Sesion</a>
-              <a href="#">Registrarse</a>
+              <a href="/registro" data-link>Registrarse</a>
             </div>  
           </nav>
       </header>
@@ -46,12 +46,12 @@
           <p>Cl. 16 #55-129, Guayabal, Medellín CC. De Moda Outlet, piso 3</p>
         </div>
         <div class="footer-item">
-          <h2>Contacto</h2>
+          <h2 id="contacto">Contacto</h2>
           <form class="form-riwi">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" placeholder="Osvaldo Riwi" required>
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="osvaldoR@gmail.com" required>
+            <label for="nameContact">Nombre</label>
+            <input type="text" id="nameContact" name="name" placeholder="Osvaldo Riwi" required>
+            <label for="emailContact">Correo electrónico</label>
+            <input type="email" id="emailContact" name="email" placeholder="osvaldoR@gmail.com" required>
             <label for="mensaje">Mensaje</label>
             <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje"  required></textarea>
             <button class="submit-button" type="submit">Enviar</button>

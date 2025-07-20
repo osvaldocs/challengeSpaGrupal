@@ -1,12 +1,15 @@
 import { setupLogin } from "./loginLogout";
+import { setupRegister } from "./registro";
+import { renderUserViews } from "./renderUserViews";
 export const routes = {
     "/": "./javascript/views/inicio.html",
     "/catalogo": "./javascript/views/catalogo.html",
     "/funciona": "./javascript/views/como-funciona.html",
     "/cargar":  "./javascript/views/cargarLibros.html",
     "/login": "./javascript/views/login.html",
-    "/editar": "./javascript/views/editarLibro",
-    "/registro": "./javascript/views/registro"
+    "/editar": "./javascript/views/editarLibro.html",
+    "/registro": "./javascript/views/registro.html",
+    "/render": "./javascript/views/renderUserViews"
 
 }
 
@@ -24,7 +27,7 @@ export async function navigate(pathnameWithQuery) {
   const html = await fetch(route).then((res) => res.text());
   document.getElementById("dinamic-content").innerHTML = html;
   history.pushState({}, "", pathnameWithQuery);
-  renderSidebarUser();
+  
 
   // Protejo la vista /users para que solo sea accesible si hay un usuario logueado
   if (pathname === "/cargar") {
@@ -53,5 +56,9 @@ export async function navigate(pathnameWithQuery) {
 
   } else if (pathname === "/login") {
     setTimeout(setupLogin, 0);
+  } else if (pathname === "/registro") {
+    setTimeout(setupRegister, 0);
   }
+
+  renderUserViews();
 }

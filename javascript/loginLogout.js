@@ -1,3 +1,4 @@
+import { navigate } from "./routes";
 import { get } from "./services";
 const urlBooks = "http://localhost:3000/phisicalBook";
 const urlEbooks = "http://localhost:3000/digitalBooks";
@@ -14,7 +15,7 @@ export  async function setupLogin() {
         const email = document.getElementById("email").value.trim();
         const password = document.getElementById("password").value.trim();
 
-        const users = await get(url);
+        const users = await get(urlUsers);
 
         const found = users.find(
             (user) => user.email === email && user.password === password
@@ -33,20 +34,10 @@ export  async function setupLogin() {
 
 //✅ Cerrar sesión (logout)
 
-document.addEventListener("click", (e) => {
-    if (e.target.id === "logout-btn") {
-        Swal.fire({
-            title: "¿Cerrar sesión?",
-            text: "Tu sesión actual se cerrará",
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonText: "Sí, cerrar",
-            cancelButtonText: "Cancelar",
-        }).then((result) => {
-            if (result.isConfirmed) {
-                localStorage.removeItem("loggedUser");  // 🧹 Cerrar sesión
-                navigate("/");
-            }
-        });
-    }
-});
+export function logoutUser() {
+  const confirmed = confirm("¿Estás seguro de que querés cerrar sesión?");
+  if (!confirmed) return;
+  localStorage.removeItem("loggedUser");
+  alert("Sesión cerrada.");
+  navigate("/login");
+}

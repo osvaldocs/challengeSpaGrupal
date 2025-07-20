@@ -1,6 +1,7 @@
-// ✅ Registro de usuarios (setupRegister)
+import {get, post} from './services';
+import { navigate } from './routes';
 
-async function setupRegister() {
+export async function setupRegister() {
   const form = document.getElementById("registerForm");
 
   form.addEventListener("submit", async (e) => {
@@ -37,7 +38,7 @@ async function setupRegister() {
 
     if (response) {
       alert("Registro exitoso. Ahora puedes iniciar sesión.");
-      navigate("/"); // Redirige al login
+      navigate("/login"); // Redirige al login
     } else {
       alert("Error al registrar. Inténtalo de nuevo.");
     }

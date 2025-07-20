@@ -1,33 +1,46 @@
 {
-    "digitalBooks": [
-        {
-             "id": "1",
-            "name": "name",
-            "author": "author",
-            "genre": "genre",
-            "year": "year"
-        }
-    ],
-
-
-    "phisicalBook": [
-        {
-            "id": "id",
-            "name": "name",
-            "author": "author",
-            "genre": "genre",
-            "year": "year"
-        }
-    ],
-
-    "users" : [
-        {
-            "id": "1",
-            "name": "Osvaldo Riwi",
-            "email": "osvaldoR@gmail.com",
-            "phone": "1162231930",
-            "password": "admin1234",
-            "role": "admin"
-        }
-    ]
+  "digitalBooks": [
+    {
+      "id": "1",
+      "name": "name",
+      "author": "author",
+      "genre": "genre",
+      "year": "year"
+    }
+  ],
+  "phisicalBook": [
+    {
+      "id": "id",
+      "name": "name",
+      "author": "author",
+      "genre": "genre",
+      "year": "year"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Osvaldo Riwi",
+      "email": "osvaldoR@gmail.com",
+      "phone": "1162231930",
+      "password": "admin1234",
+      "role": "admin"
+    },
+    {
+      "id": "958c",
+      "name": "Pablo",
+      "email": "pablo@ejemplo.com",
+      "password": "123456",
+      "phone": "1354",
+      "role": "user"
+    },
+    {
+      "id": "87ea",
+      "name": "alejandra",
+      "email": "alejandra@gmail.com",
+      "password": "123456",
+      "phone": "5465465465",
+      "role": "user"
+    }
+  ]
 }
