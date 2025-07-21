@@ -32,7 +32,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: var(--dark);
-  background-color: var(--white); 
+  background-color: var(--body-color); 
 }
 
 .hero {
@@ -76,7 +76,8 @@ a {
     --light: #f8f9fa;
     --dark: #343a40;
     --foooter: #2D2D2D;
-    --input-border: #d5d5d5
+    --input-border: #d5d5d5;
+    --body-color: #f3f5f7;
 }
 
 
@@ -250,6 +251,7 @@ span {
   border-radius: 0.6rem;
   color: black;
   padding: 2rem 0;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 
 .login-form img {
