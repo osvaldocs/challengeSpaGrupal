@@ -2,7 +2,7 @@
   "digitalBooks": [
     {
       "id": "1",
-      "name": "name",
+      "title": "name",
       "author": "author",
       "genre": "genre",
       "year": "year"
@@ -10,16 +10,17 @@
   ],
   "phisicalBook": [
     {
-      "id": "id",
-      "name": "name",
-      "author": "author",
-      "genre": "genre",
-      "year": "year"
+      "id": "1",
+      "title": "Cien años de soledad",
+      "author": "Gabriel García Márquez",
+      "genre": "Novela-Realismo mágico",
+      "year": "1967",
+      "img": "cienAñosDeSoledad.png"
     }
   ],
   "users": [
     {
-      "id": "1",
+      "id": "1",  
       "name": "Osvaldo Riwi",
       "email": "osvaldoR@gmail.com",
       "phone": "1162231930",

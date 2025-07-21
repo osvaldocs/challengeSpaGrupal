@@ -35,9 +35,10 @@ export  async function setupLogin() {
 //✅ Cerrar sesión (logout)
 
 export function logoutUser() {
+     console.log("Logout ejecutado")
   const confirmed = confirm("¿Estás seguro de que querés cerrar sesión?");
   if (!confirmed) return;
   localStorage.removeItem("loggedUser");
   alert("Sesión cerrada.");
-  navigate("/login");
+  navigate("/");
 }

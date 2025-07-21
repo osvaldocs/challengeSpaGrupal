@@ -1,6 +1,7 @@
 import { setupLogin } from "./loginLogout";
 import { setupRegister } from "./registro";
 import { renderUserViews } from "./renderUserViews";
+import { renderBookCatalog } from "./catalogo";
 export const routes = {
     "/": "./javascript/views/inicio.html",
     "/catalogo": "./javascript/views/catalogo.html",
@@ -58,7 +59,8 @@ export async function navigate(pathnameWithQuery) {
     setTimeout(setupLogin, 0);
   } else if (pathname === "/registro") {
     setTimeout(setupRegister, 0);
+  } else if (pathname === "/catalogo") {
+    setTimeout(renderBookCatalog, 0);
   }
-
   renderUserViews();
 }
